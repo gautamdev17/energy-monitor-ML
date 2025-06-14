@@ -2,7 +2,7 @@
 
 This is a personal project where I'm building a real-time **Smart Energy Monitor** using the **ESP32**, current and voltage sensors, and integrating it with **Machine Learning** to predict electricity bills.
 
-The goal? To combine hands-on hardware, embedded firmware, and ML deployment into a single, practical system — the kind of project that not only tracks energy consumption, but actually *makes sense of it*.
+The goal is to combine hands-on hardware, embedded firmware, and ML deployment into a single, practical system. 
 
 ---
 
@@ -12,8 +12,7 @@ The goal? To combine hands-on hardware, embedded firmware, and ML deployment int
 -  Power and energy calculation using EmonLib  
 -  Electricity bill prediction using a trained ML model  
 -  Plans for app/web interface integration  
--  ESP32-based data transmission and control  
--  Drafted for submission to *Electronics For You (EFY)* magazine
+-  ESP32-based data transmission and control 
 
 ---
 
