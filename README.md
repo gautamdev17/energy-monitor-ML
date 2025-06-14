@@ -45,6 +45,7 @@ The goal is to combine hands-on hardware, embedded firmware, and ML deployment i
 - Firmware code functional (voltage readings stable, current under testing)
 - ML model trained, conversion to TinyML in progress
 - Working on integration + EFY documentation
+- Stuck with current sensor readings(it's eating my brain)
 ---
 
 ## License
