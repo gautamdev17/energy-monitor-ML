@@ -12,8 +12,7 @@ The goal is to combine hands-on hardware, embedded firmware, and ML deployment i
 -  Power and energy calculation using EmonLib  
 -  Electricity bill prediction using a trained ML model  
 -  Plans for app/web interface integration  
--  ESP32-based data transmission and control 
-
+-  ESP32-based data transmission and control
 ---
 
 ## Hardware Overview
@@ -45,6 +44,7 @@ The goal is to combine hands-on hardware, embedded firmware, and ML deployment i
 - Firmware code functional (voltage readings stable, current under testing)
 - ML model trained, conversion to TinyML in progress
 - Working on integration + EFY documentation
+- Debugging problems in current sensor readings(it's eating my brain)
 ---
 
 ## License
