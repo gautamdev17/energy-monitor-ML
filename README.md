@@ -17,10 +17,11 @@ The goal is to combine hands-on hardware, embedded firmware, and ML deployment i
 
 ## Hardware Overview
 
-| Component         | Description                         |
+| Component         | Description                        |
 |------------------|-------------------------------------|
 | ESP32            | Main microcontroller (Wi-Fi enabled)|
 | SCT-013-000      | Current sensor                      |
+| ACS712           | Current sensor                      |
 | ZMPT101B         | Voltage sensor                      |
 | 100-ohm Resistor | Burden resistor for current sensing |
 | Power Supply     | For safe AC-DC conversion           |
@@ -29,22 +30,28 @@ The goal is to combine hands-on hardware, embedded firmware, and ML deployment i
 | 10uF capacitor   | To stabilize signal from SCT-013-000|
 
 ---
-//coming soon...
 ## ML Integration
+	1.	Model Training
+A linear regression model is trained using historical monthly data: total energy consumed (kWh), median temperature (°C), and humidity (%) for each month.
+	2.	Feature Engineering
+The input features are:
+Month (1–12), Median Temperature, and Median Humidity.
+The output is the predicted power consumption in kWh.
+	3.	Model Deployment
+The trained model is saved using joblib and loaded into the Tkinter UI app for real-time predictions. No cloud/edge inference needed—pure local ML!
+	4.	Smart Prediction UI
+The user selects a month; temperature and humidity are fetched from the ESP32. The app then predicts electricity usage and estimated bill instantly.
 
-- Trained a regression model using collected data  
-- Used **TinyML** concepts to deploy model on the ESP32  
-- Predicts monthly electricity bill based on live usage trends  
-- Code built and trained using Python & scikit-learn
 ---
 
 ## Current Progress
 
-- Hardware circuit built and tested (AC-side debugging in progress)
-- Firmware code functional (voltage readings stable, current under testing)
-- ML model trained, conversion to TinyML in progress
-- Working on integration + EFY documentation
-- Debugging problems in current sensor readings(it's eating my brain)
+--HARDWARE PART IS COMPLETED, voltage,current and temperature sensors are working perfectly
+--chose ACS712 sensor for accurate values since SCT sensor had a lot of interference
+--ML code is over, the model can predict your bill using linear regression
+--problem of overfitting is also addressed
+--What now?
+  Looking for a good UI for esp32 and the ML model can talk and present to the user
 ---
 
 ## License
