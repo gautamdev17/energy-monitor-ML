@@ -31,16 +31,16 @@ The goal is to combine hands-on hardware, embedded firmware, and ML deployment i
 
 ---
 ## ML Integration
-	1.	Model Training
-A linear regression model is trained using historical monthly data: total energy consumed (kWh), median temperature (°C), and humidity (%) for each month.
-	2.	Feature Engineering
-The input features are:
-Month (1–12), Median Temperature, and Median Humidity.
-The output is the predicted power consumption in kWh.
-	3.	Model Deployment
-The trained model is saved using joblib and loaded into the Tkinter UI app for real-time predictions. No cloud/edge inference needed—pure local ML!
-	4.	Smart Prediction UI
-The user selects a month; temperature and humidity are fetched from the ESP32. The app then predicts electricity usage and estimated bill instantly.
+1. Model Training
+	A linear regression model is trained using historical monthly data: total energy consumed (kWh), median temperature (°C), and humidity (%) for each month.
+2.Feature Engineering
+	The input features are:
+	Month (1–12), Median Temperature, and Median Humidity.
+	The output is the predicted power consumption in kWh.
+3.Model Deployment
+	The trained model is saved using joblib and loaded into the Tkinter UI app for real-time predictions. No cloud/edge inference needed—pure local ML!
+4.Smart Prediction UI
+	The user selects a month; temperature and humidity are fetched from the ESP32. The app then predicts electricity usage and estimated bill instantly.
 
 ---
 
